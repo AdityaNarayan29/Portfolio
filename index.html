@@ -27,20 +27,38 @@
                 }
 
                 .container {
-                        margin: 10%;
+                        /* border:3px solid rgb(161, 19, 19) ; */
+                        height: 90vh;
+                        min-height: 90%;
+                        margin: 0 10%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
                 }
 
                 .bigtext {
+                        padding: 1%;
                         font-size: 30px;
                 }
 
                 .biggertext {
+                        padding: 1%;
                         font-size: 48px;
+                }
+                .profiles{
+                        padding: 1%;
+                        display: flex;
+                        flex-direction: row;
+                }
+                .profiles li{
+                        margin: 0 2%;
                 }
         </style>
         <!-- Style CSS File -->
         <script src="../navbar/nav.js" defer></script>
         <link rel="stylesheet" href="../navbar/nav.css" />
+        <link rel="stylesheet" href="CSS/style.css" />
+
 </head>
 
 <body>
@@ -68,8 +86,14 @@
                 <h2 class="bigtext">Hi There! 👋🏻</h2>
                 <h1 class="biggertext">I'm <span>Aditya Narayan.</span></h1>
                 <!-- <hr> -->
-                <br>
+                <!-- <br> -->
                 <h2 class="bigtext">Full Stack Developer | MERN</h2>
+                <ul class="profiles">
+                        <li>Linkedin</li>
+                        <li>GFG</li>
+                        <li>Codechef</li>
+                        <li>hackerrank</li>
+                </ul>
         </div>
 </body>
 

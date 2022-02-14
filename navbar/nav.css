@@ -1,4 +1,5 @@
 * {
+  /* overflow: hidden; */
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -6,21 +7,23 @@
 }
 body{
   background: #000;
+  overflow-x: hidden;
 }
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 8vh;
-  background-color: #33044e;
+  height: 10vh;
+  background-color: #4f007c;
   /* background-color: #210233; */
   /* background-image: linear-gradient(#210233 , #350053 ); */
+  z-index: -100;
 }
 
 nav .logo {
   color: rgb(226, 226, 226);
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   font-size: 22px;
 }
 
@@ -34,7 +37,7 @@ nav .menu {
 nav .menu a {
   color: rgb(226, 226, 226);
   text-decoration: none;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   font-weight: bold;
   font-size: 14px;
 }
@@ -65,16 +68,17 @@ nav #toggleBtn div {
 
   nav .menu {
     position: absolute;
-    top: 8vh;
+    top: 10vh;
     right: 0px;
-    width: 50%;
-    height: 92vh;
-    background-color: #210233;
+    width: 100%;
+    height: 90vh;
+    background-color: #560088;
     display: flex;
     flex-direction: column;
     align-items: center;
     transform: translateX(100%);
-    transition: transform 0.5s ease-in;
+    transform: scale(0.2,0);
+    transition: transform 0.2s ease-in;
   }
 
   nav .menu li {
