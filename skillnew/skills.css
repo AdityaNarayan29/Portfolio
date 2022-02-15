@@ -30,6 +30,8 @@ body {
   /* height: calc(var(--marquee-height)*0.5); */
 }
 .marquee {
+  
+  z-index: -1;
   height: calc(var(--marquee-height)*1.5);
   width: var(--marquee-width);
   padding: 0px 0px 75px 0px;
@@ -159,6 +161,8 @@ body {
     }
 
 .btn {
+  
+  z-index: -1;
   position: relative;
   display: inline-block;
   width: auto;
@@ -232,7 +236,7 @@ body {
   height: 0%;
   background: transparent;
   opacity: 0;
-  z-index: 300;
+  z-index: 3;
   transition: width 0.2s ease-in, height 0.15s 0.2s linear, opacity 0s 0.35s;
 }
 

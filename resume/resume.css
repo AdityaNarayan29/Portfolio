@@ -38,6 +38,7 @@ img{
   filter: invert(1);
     padding: 2%;
     width:100%;
+    z-index: -1;
 }
 .inner-container h1{
     margin: auto;
@@ -92,6 +93,7 @@ img{
           background:transparent;
           border: gray;
           border-radius:300px;
+          z-index: -1;
       }
   div {
     /* margin: auto; */
