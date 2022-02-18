@@ -14,16 +14,17 @@
                 }
 
                 body {
-                        background: #000;
+                        background: #2b6777;
                         color: aliceblue;
                         overflow: hidden;
                         font-family: 'Nunito', sans-serif;
-                        background: url('bg.jpg');
+                        /* background: url('bg.jpg'); */
                         background-repeat: no-repeat;
                 }
 
                 span {
-                        color: #ae00fff5;
+                        
+                        color: #ffffff;
                 }
 
                 .container {
@@ -35,7 +36,9 @@
                         flex-direction: column;
                         justify-content: center;
                 }
-
+                .container .hi{
+                        color: beige;
+                }
                 .bigtext {
                         padding: 1%;
                         font-size: 30px;
@@ -49,9 +52,18 @@
                         padding: 1%;
                         display: flex;
                         flex-direction: row;
+                        text-decoration: none;
+                }
+                .profiles ul{
+                        text-decoration: none;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
                 }
                 .profiles li{
                         margin: 0 2%;
+                        color: #c8d8e4;
+                        margin-left: 7px ;
                 }
         </style>
         <!-- Style CSS File -->
@@ -83,16 +95,16 @@
         </nav>
 
         <div class="container">
-                <h2 class="bigtext">Hi There! 👋🏻</h2>
+                <h2 class="bigtext hi">Hi There! 👋🏻</h2>
                 <h1 class="biggertext">I'm <span>Aditya Narayan.</span></h1>
                 <!-- <hr> -->
                 <!-- <br> -->
                 <h2 class="bigtext">Full Stack Developer | MERN</h2>
                 <ul class="profiles">
-                        <li>Linkedin</li>
-                        <li>GFG</li>
-                        <li>Codechef</li>
-                        <li>hackerrank</li>
+                        <li>LinkedIn </li>
+                        <li>GFG </li>
+                        <li>Codechef </li>
+                        <li>HackerRank </li>
                 </ul>
         </div>
 </body>

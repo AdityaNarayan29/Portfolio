@@ -1,263 +1,65 @@
-body {
-  margin: 0;
-  background-color: rgb(51, 51, 51);
-  background-size: cover;
-  background-repeat: no-repeat;
-  justify-content: center;
-  align-items: center;
-}
-
-:root {
-  --marquee-width: 100vw;
-  --marquee-height: 24vh;
-  --marquee-elements-displayed: 6;
-  --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
-  --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
-}
-
 .container{
   display: flex;
   flex-direction: column;
   align-content: space-between;
-  height: 90%;
+  height: 60%;
   align-items: center;
   justify-content: center;  
   overflow-x: hidden;
+  padding-top: 100px;
 }
-.merquee ul{
-  position: relative;
-  justify-content: center;
-  /* height: calc(var(--marquee-height)*0.5); */
+.graph{
+  font-size: larger;
+  font-weight: 500;
 }
-.marquee {
-  
-  z-index: -1;
-  height: calc(var(--marquee-height)*1.5);
-  width: var(--marquee-width);
-  padding: 0px 0px 75px 0px;
-  color: #eee;
-}
-
-.marquee-content {
-  list-style: none;
+.graph div{
+  color: rgb(0, 0, 0);
   display: flex;
-  animation: scrolling var(--marquee-animation-duration) linear infinite;
+  flex-direction: row;
+  width: 85vw;
+}
+.skillSet{
+  border-radius: 5px;
+  margin: 2px 2px;
+  /* padding: 10px 15px; */
+  padding: 20px 20px;
+}
+#pro{
+  background: rgb(255, 246, 125);
+  width: 22%;
+}
+#fro{
+  background: rgb(124, 214, 255);
+  width: 30%;
+}
+#bac{
+  background: pink;
+  width: 25%;
+}
+#dat{
+  background: rgb(102, 255, 102);
+  width: 20%;
+}
+#dev{
+  background: cyan;
+  width: 20%;
 }
 
-
-.marquee-content:hover {
-  animation-play-state: paused;
+.op{
+  opacity: 0.8;
 }
-
-
-
-.marquee:before {
-  left: 0;
-  background: linear-gradient(to right,
-      rgb(0, 0, 0) 0%, transparent 100%);
+.proL{
+  height: 200px;
 }
-
-.marquee:after {
-  right: 0;
-  background: linear-gradient(to left,
-      rgb(0, 0, 0) 0%, transparent 100%);
+.froL{
+  height: 200px;
 }
-
-
-@keyframes scrolling {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(calc(-3 * var(--marquee-element-width) * var(--marquee-elements)));
-  }
+.bacL{
+  height: 200px;
 }
-
-.marquee-content li {
-  display: flex;
-  flex-shrink: 0;
-  width: var(--marquee-element-width);
-  max-height: 100%;
-  font-size:6rem;
-  white-space: nowrap;
+.datL{
+  height: 200px;
 }
-
-
-@media (max-width: 600px) {
-  html {
-    font-size: 12px;
-  }
-
-  :root {
-    --marquee-width: 100vw;
-    --marquee-height: 18vh;
-    --marquee-elements-displayed: 3.5;
-  }
-
-  .marquee:before, .marquee:after {
-    width: 6rem;
-  }
-}
-
-
-
-@import url('https://fonts.googleapis.com/css?family=Oswald');
-
-@keyframes scrolling {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translatex(-1200px);
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
-
-    ::-webkit-scrollbar {
-      width: 1px;
-    }
-
-    .menu div  {
-      margin: auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      /* border: 2px solid green; */
-    }
-
-
-    :active,
-    :hover,
-    :focus {
-      outline: 0 !important;
-      outline-offset: 0;
-    }
-
-    ::before,
-    ::after {
-      position: absolute;
-      content: "";
-    }
-
-.btn {
-  
-  z-index: -1;
-  position: relative;
-  display: inline-block;
-  width: auto;
-  height: auto;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  margin: 15px 15px;
-  /* min-width: 150px; */
-}
-
-.btn span {
-  position: relative;
-  display: inline-block;
-  font-size: 16px;
-  font-weight: bolder;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  font-family: 'Nunito', sans-serif;
-  font-weight: bolder;
-  top: 0;
-  left: 0;
-  padding: 15px 25px;
-  transition: 0.3s;
-}
-
-
-
-.btnn span {
-  color: #ba25ff;
-  background-color: rgba(0, 0, 0, 0.274);
-}
-
-.btnn span:hover {
-  background-color: rgb(0, 0, 0);
-  color: #d374ff;
-}
-
-.btnn::before,
-.btnn::after {
-  width: 15%;
-  height: 4px;
-  background-color: rgb(140,140,140);
-  z-index: 2;
-}
-
-
-.btn.hover-border::before,
-.btn.hover-border::after {
-  bottom: 0;
-  transition: width 0.2s 0.35s ease-out;
-}
-
-.btn.hover-border::before {
-  right: 50%;
-}
-
-.btn.hover-border::after {
-  left: 50%;
-}
-
-.btn.hover-border:hover::before,
-.btn.hover-border:hover::after {
-  width: 50%;
-  transition: width 0.2s ease-in;
-}
-
-.btn.hover-border span::before,
-.btn.hover-border span::after {
-  width: 0%;
-  height: 0%;
-  background: transparent;
-  opacity: 0;
-  z-index: 3;
-  transition: width 0.2s ease-in, height 0.15s 0.2s linear, opacity 0s 0.35s;
-}
-
-.btn.hover-border span::before {
-  bottom: 0;
-  left: 0;
-  border-left: 2px solid rgb(140,140,140);
-  border-top: 2px solid rgb(140,140,140);
-}
-
-.btn.hover-border span::after {
-  bottom: 0;
-  right: 0;
-  border-right: 2px solid rgb(140,140,140);
-  border-top: 2px solid rgb(140,140,140);
-}
-
-.btn.hover-border span:hover::before,
-.btn.hover-border span:hover::after {
-  width: 50%;
-  height: 96%;
-  opacity: 1;
-  transition: height 0.2s 0.2s ease-in, width 0.2s 0.4s linear, opacity 0s 0.2s;
+.devL{
+  height: 200px;
 }

@@ -6,7 +6,7 @@
   font-family: "Poppins", sans-serif;
 }
 body{
-  background: #000;
+  background: #2b6777;
   overflow-x: hidden;
 }
 nav {
@@ -14,14 +14,15 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 10vh;
-  background-color: #7100b3;
+  /* background-color: #7100b3; */
+  background-color: #ffffff;
   /* background-color: #210233; */
   /* background-image: linear-gradient(#210233 , #350053 ); */
   z-index: 10;
 }
 
 nav .logo {
-  color: rgb(226, 226, 226);
+  color: rgb(0, 0, 0);
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 22px;
@@ -36,7 +37,7 @@ nav .menu {
 }
 
 nav .menu a {
-  color: rgb(226, 226, 226);
+  color: rgb(0, 0, 0);
   text-decoration: none;
   letter-spacing: 1px;
   font-weight: bold;
@@ -52,7 +53,7 @@ nav #toggleBtn {
 nav #toggleBtn div {
   width: 25px;
   height: 3px;
-  background-color: rgb(226, 226, 226);
+  background-color: rgb(0, 0, 0);
   margin: 5px;
   transition: all 0.3s ease;
 }
@@ -66,7 +67,7 @@ nav #toggleBtn div {
 @media screen and (max-width: 768px) {
   body {
     overflow-x: hidden;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
   }
 
   nav .menu {
@@ -75,7 +76,7 @@ nav #toggleBtn div {
     right: 0px;
     width: 100%;
     height: 90vh;
-    background-color: #4b0077;
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;

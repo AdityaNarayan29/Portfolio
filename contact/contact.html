@@ -55,16 +55,20 @@
       margin: 3%;
       padding: 1%;
       padding-left: 12px;
-      /* background-color: rgb(0, 0, 0); */
+      background-color: rgb(0, 0, 0);
       border: none;
-      border-bottom: 2px solid rgb(180, 180, 180);
+      border-bottom: 2px solid rgb(196, 196, 196);
       background: transparent;
-      color: aliceblue;
+      color: rgb(255, 255, 255);
       outline: none;
       font-family: 'Nunito', sans-serif;
       font-weight: bolder;
       letter-spacing: 1px;
     }
+    ::placeholder {
+  color: rgb(187, 187, 187);
+  font-size: 1.2em;
+}
 
     button{
             color: white;
@@ -104,7 +108,7 @@
       border: none;
       cursor: pointer;
       margin: 15px 15px;
-      z-index: -1;
+      z-index: 1;
     }
 
     .btn span {
@@ -126,13 +130,13 @@
 
 
     .btnn span {
-      color: #ba25ff;
+      color: #ffffff;
       background-color: rgba(0, 0, 0, 0.274);
     }
 
     .btnn span:hover {
       background-color: rgb(0, 0, 0);
-      color: #d374ff;
+      color: #ffffff;
     }
 
     .btnn::before,
