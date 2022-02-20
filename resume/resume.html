@@ -1,47 +1,297 @@
-
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Resume</title>
-        <link rel="stylesheet" href="resume.css">
-        <script src="resume.js"></script>
-        <link rel="stylesheet" href="../navbar/nav.css" />
-        <script src="../navbar/nav.js" defer></script>
-    </head>
-    <body>
-        <nav>
-            <div class="logo">
-                    <h4>AN.</h4>
-            </div>
-            <ul class="menu">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="../about/about.html">About</a></li>
-                    <li><a href="../skillnew/skill.html">Skills</a></li>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="../projectsPage/projectPage.html">Projects</a></li>
-                    <li><a href="../resume/resume.html">Resume</a></li>
-                    <li><a href="../contact/contact.html">Contact Me</a></li>
-            </ul>
-            <div id="toggleBtn">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-            </div>
-    </nav>
-        <br><br>
-            <div class="inner-container">
-                <div class="left"><img src="resume.png" alt="Image"></div>
-                <!-- <div class="left"><img src="AdityaNarayan_CV.svg" alt="Image"></div> -->
-                <div class="right">
-                    <div><h1>Resume</h1></div>
-                    <!-- <h1>Resume</h1> -->
-                    <div>
-                        <button  class="btn btnn hover-border">
-                            <a href="AdityaNarayan_CV.pdf" download><span>Download</span></a>
-                        </button>
-                    </div>
-            </div>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <link rel="stylesheet" href="resume.css"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <link rel="stylesheet" href="../navbar/nav.css" />
+  <script src="../navbar/nav.js" defer></script>
+  <script src="res.js" defer></script>
+  <link rel="stylesheet" href="res.css">
+</head>
+
+<body>
+  <nav>
+  <div class="logo">
+    <h4>AN.</h4>
+</div>
+<ul class="menu">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../about/about.html">About</a></li>
+    <li><a href="../skillnew/skill.html">Skills</a></li>
+    <li><a href="#">Work</a></li>
+    <li><a href="../projectsPage/projectPage.html">Projects</a></li>
+    <li><a href="../resume/resume.html">Resume</a></li>
+    <li><a href="../contact/contact.html">Contact Me</a></li>
+</ul>
+<div id="toggleBtn">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+</div>
+</nav>
+  <div class="resume-wrapper">
+    <section class="profile section-padding">
+      <div class="container">
+        <div class="picture-resume-wrapper">
+          <div class="picture-resume">
+            <!-- <span><img src="resume.png" alt="" /></span> -->
+            <svg version="1.1" viewBox="0 0 350 350">
+
+              <defs>
+                <filter id="goo">
+                  <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
+                  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -9"
+                    result="cm" />
+                </filter>
+              </defs>
+
+
+              <g filter="url(#goo)">
+
+                <circle id="main_circle" class="st0" cx="171.5" cy="175.6" r="130" />
+
+                <circle id="circle" class="bubble0 st1" cx="171.5" cy="175.6" r="122.7" />
+                <circle id="circle" class="bubble1 st1" cx="171.5" cy="175.6" r="122.7" />
+                <circle id="circle" class="bubble2 st1" cx="171.5" cy="175.6" r="122.7" />
+                <circle id="circle" class="bubble3 st1" cx="171.5" cy="175.6" r="122.7" />
+                <circle id="circle" class="bubble4 st1" cx="171.5" cy="175.6" r="122.7" />
+                <circle id="circle" class="bubble5 st1" cx="171.5" cy="175.6" r="122.7" />
+                <circle id="circle" class="bubble6 st1" cx="171.5" cy="175.6" r="122.7" />
+                <circle id="circle" class="bubble7 st1" cx="171.5" cy="175.6" r="122.7" />
+                <circle id="circle" class="bubble8 st1" cx="171.5" cy="175.6" r="122.7" />
+                <circle id="circle" class="bubble9 st1" cx="171.5" cy="175.6" r="122.7" />
+                <circle id="circle" class="bubble10 st1" cx="171.5" cy="175.6" r="122.7" />
+
+              </g>
+            </svg>
+          </div>
+          <div class="clearfix"></div>
         </div>
-    </body>
-    </html>
+        <div class="name-wrapper">
+          <h1>Aditya <br />Narayan</h1><!-- YOUR NAME AND LAST NAME  -->
+        </div>
+        <div class="clearfix"></div>
+        <div class="contact-info clearfix">
+          <div class="list-titles">
+            <div class="list">Call</div>
+            <div class="list">Mail</div>
+            <div class="list">Web</div>
+            <div class="list">Home</div>
+          </div>
+          <div class="list-content ">
+            <div class="list">+91 7737761854</div> <!-- YOUR PHONE NUMBER  -->
+            <div class="list">29adityanarayan2000@gmail.com</div> <!-- YOUR EMAIL -->
+            <div class="list"><a href="https://aditya29.netlify.app/index.html">aditya29.netlify.app</a></div> <!-- YOUR WEBSITE  -->
+            <div class="list">Bhubaneshwar, India</div> <!-- YOUR STATE AND COUNTRY  -->
+          </div>
+        </div>
+        <div class="contact-presentation">
+          <!-- YOUR PRESENTATION RESUME  -->
+          <!-- <p><span class="bold">Lorem</span> ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod congue nisi, nec consequat quam. In consectetur faucibus turpis eget laoreet. Sed nec imperdiet purus. </p> -->
+        </div>
+        <div class="contact-social clearfix ">
+          <div class="list-titles">
+            <div class="list">LinkedIn</div>
+            <div class="list">GitHub</div>
+            <div class="list">Codepen</div>
+          </div>
+          <div class="list-content">
+            <!-- REMEMBER TO PUT THE URL ON THE HREF TAG  -->
+            <div class="list"><a href="https://www.linkedin.com/in/adityanarayan29/">AdityaNarayan29</a></div>
+            <!-- YOUR TWITTER USER  -->
+            <div class="list"><a href="https://github.com/AdityaNarayan2000/">AdityaNarayan2000</a></div> <!-- YOUR DRIBBBLE USER  -->
+            <div class="list"><a href="">janderson</a></div> <!-- YOUR BEHANCE USER  -->
+          </div>
+        </div>
+      </div>
+      <div class="section-wrapper clearfix">
+        <h3 class="section-title">Skills</h3> <!-- YOUR SET OF SKILLS  -->
+        <div class="skill-percentage">HTML / HTML5</div>
+        <div class="skill-percentage">CSS / CSS3</div>
+        <div class="skill-percentage">Javascript</div>
+        <div class="skill-percentage">Jquery</div>
+        <div class="skill-percentage">Wordpress</div>
+        <div class="skill-percentage">Photoshop</div>
+      </div>
+
+      <div class="section-wrapper clearfix">
+        <h3 class="section-title">Hobbies</h3> <!-- DESCRIPTION OF YOUR HOBBIES -->
+        <p></p>
+      </div>
+      <div class="inner-container">
+        <div>
+            <h1>Resume</h1>
+        </div>
+        <div>
+            <button class="btn btnn hover-border">
+                <!-- <a href="AdityaNarayan_CV.pdf" download><span>Download</span></a> -->
+                <a href="https://drive.google.com/file/d/13E6wz3WkS4U2izoCmv0EzJWRJZZ422O-/view?usp=sharing" download><span>Download</span></a>
+            </button>
+        </div>
+    </div>
+    </section>
+    
+    <section class="experience section-padding">
+      <div class="container">
+        <h3 class="experience-title">Experience</h3>
+
+        <div class="experience-wrapper">
+          <div class="company-wrapper clearfix">
+            <div class="experience-title">Company name</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
+            <div class="time">Nov 2012 - Present</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
+          </div>
+
+          <div class="job-wrapper clearfix">
+            <div class="experience-title">Front End Developer </div> <!-- JOB TITLE  -->
+            <div class="company-description">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a elit facilisis, adipiscing leo in,
+                dignissim magna.</p> <!-- JOB DESCRIPTION  -->
+            </div>
+          </div>
+
+          <div class="company-wrapper clearfix">
+            <div class="experience-title">Company name</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
+            <div class="time">Nov 2010 - Present</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
+          </div>
+
+          <div class="job-wrapper clearfix">
+            <div class="experience-title">Freelance, Web Designer / Web Developer</div> <!-- JOB TITLE  -->
+            <div class="company-description">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a elit facilisis, adipiscing leo in,
+                dignissim magna.</p> <!-- JOB DESCRIPTION  -->
+            </div>
+          </div>
+
+          <div class="company-wrapper clearfix">
+            <div class="experience-title">Company name</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
+            <div class="time">Nov 2009 - Nov 2010</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
+          </div>
+
+          <div class="job-wrapper clearfix">
+            <div class="experience-title">Web Designer </div> <!-- JOB TITLE  -->
+            <div class="company-description">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a elit facilisis, adipiscing leo in,
+                dignissim magna.</p> <!-- JOB DESCRIPTION  -->
+            </div>
+          </div>
+
+        </div>
+        <!--Skill experience-->
+
+        
+
+        
+      </div>
+      <div class="container">
+        <h3 class="experience-title">Experience</h3>
+
+        <div class="experience-wrapper">
+          <div class="company-wrapper clearfix">
+            <div class="experience-title">Company name</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
+            <div class="time">Nov 2012 - Present</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
+          </div>
+
+          <div class="job-wrapper clearfix">
+            <div class="experience-title">Front End Developer </div> <!-- JOB TITLE  -->
+            <div class="company-description">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a elit facilisis, adipiscing leo in,
+                dignissim magna.</p> <!-- JOB DESCRIPTION  -->
+            </div>
+          </div>
+
+          <div class="company-wrapper clearfix">
+            <div class="experience-title">Company name</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
+            <div class="time">Nov 2010 - Present</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
+          </div>
+
+          <div class="job-wrapper clearfix">
+            <div class="experience-title">Freelance, Web Designer / Web Developer</div> <!-- JOB TITLE  -->
+            <div class="company-description">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a elit facilisis, adipiscing leo in,
+                dignissim magna.</p> <!-- JOB DESCRIPTION  -->
+            </div>
+          </div>
+
+          <div class="company-wrapper clearfix">
+            <div class="experience-title">Company name</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
+            <div class="time">Nov 2009 - Nov 2010</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
+          </div>
+
+          <div class="job-wrapper clearfix">
+            <div class="experience-title">Web Designer </div> <!-- JOB TITLE  -->
+            <div class="company-description">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a elit facilisis, adipiscing leo in,
+                dignissim magna.</p> <!-- JOB DESCRIPTION  -->
+            </div>
+          </div>
+
+        </div>
+        <!--Skill experience-->
+
+        
+
+        
+      </div>
+      <div class="container">
+        <h3 class="experience-title">Experience</h3>
+
+        <div class="experience-wrapper">
+          <div class="company-wrapper clearfix">
+            <div class="experience-title">Company name</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
+            <div class="time">Nov 2012 - Present</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
+          </div>
+
+          <div class="job-wrapper clearfix">
+            <div class="experience-title">Front End Developer </div> <!-- JOB TITLE  -->
+            <div class="company-description">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a elit facilisis, adipiscing leo in,
+                dignissim magna.</p> <!-- JOB DESCRIPTION  -->
+            </div>
+          </div>
+
+          <div class="company-wrapper clearfix">
+            <div class="experience-title">Company name</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
+            <div class="time">Nov 2010 - Present</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
+          </div>
+
+          <div class="job-wrapper clearfix">
+            <div class="experience-title">Freelance, Web Designer / Web Developer</div> <!-- JOB TITLE  -->
+            <div class="company-description">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a elit facilisis, adipiscing leo in,
+                dignissim magna.</p> <!-- JOB DESCRIPTION  -->
+            </div>
+          </div>
+
+          <div class="company-wrapper clearfix">
+            <div class="experience-title">Company name</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
+            <div class="time">Nov 2009 - Nov 2010</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
+          </div>
+
+          <div class="job-wrapper clearfix">
+            <div class="experience-title">Web Designer </div> <!-- JOB TITLE  -->
+            <div class="company-description">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a elit facilisis, adipiscing leo in,
+                dignissim magna.</p> <!-- JOB DESCRIPTION  -->
+            </div>
+          </div>
+
+        </div>
+        <!--Skill experience-->
+
+        
+
+        
+      </div>
+    </section>
+
+    <div class="clearfix"></div>
+  </div>
+</body>
+
+</html>
