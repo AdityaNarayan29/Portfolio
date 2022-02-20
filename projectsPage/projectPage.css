@@ -1,0 +1,114 @@
+/* width */
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* background: #f1f1f1; */
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:300);
+
+.subskill {
+  /* background-color: black; */
+  font-size: 12px;
+}
+
+body {
+  background-color: #c8d8e4;
+}
+
+.subskill {
+  margin: 0%;
+  /* background-color: black; */
+  /* font-size: 12px; */
+}
+
+.subskill ul {
+  /* background: linear-gradient(#333, #111); */
+  /* min-height: 100%; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.subskill li {
+  z-index: 1;
+  margin: 50px;
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center;  */
+  vertical-align: middle;
+  text-align: center;
+}
+
+.badge {
+  display: block;
+  position: relative;
+  width: 12rem;
+  height: 12rem;
+  cursor: pointer;
+  /* background: url(https://source.unsplash.com/random/1000x1000) no-repeat 100% 50%; */
+  /* background: url('pic.jpg') no-repeat 20% 10%; */
+  
+  background: url('illustration.png') no-repeat 2% 10%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-size: 120%; */
+  border-radius: 50%;
+  border: 2px solid #2b6777;
+  ;
+  transition: all .7s cubic-bezier(0.55, 0, 0.1, 1);
+  box-shadow: 0px 0.5rem 1rem rgba(20, 20, 20, 0.466);
+}
+
+.badge:hover {
+  box-shadow: 0px 0.5rem 2rem rgba(0, 0, 0, 0.75);
+  background-position: 0% 20%;
+}
+
+.badge:hover .text {
+  transform: rotate(-45deg) translate(0px) rotate(-315deg);
+  background: #2b6777ad;
+  width: 12rem;
+  letter-spacing: 1rem;
+  line-height: 12rem;
+  height: 12rem;
+  margin-top: -6rem;
+  margin-left: -6rem;
+  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1), letter-spacing 1.5s ease-out;
+}
+
+.badge .text {
+  display: block;
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  line-height: 5rem;
+  left: 50%;
+  top: 50%;
+  /* margin-top: -2.5rem; */
+  /* margin-left: -2.5rem; */
+  /* font-size: 2rem; */
+  font-family: Raleway, sans-serif;
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+  background: #2b6777;
+  /* transform: rotate(-180deg) translate(-5rem) rotate(180deg); */
+  box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+}

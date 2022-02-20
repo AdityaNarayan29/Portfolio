@@ -23,7 +23,6 @@
                 }
 
                 span {
-                        
                         color: #ffffff;
                 }
 
@@ -36,9 +35,11 @@
                         flex-direction: column;
                         justify-content: center;
                 }
-                .container .hi{
+
+                .container .hi {
                         color: beige;
                 }
+
                 .bigtext {
                         padding: 1%;
                         font-size: 30px;
@@ -46,30 +47,43 @@
 
                 .biggertext {
                         padding: 1%;
-                        font-size: 48px;
+                        font-size: 66px;
                 }
-                .profiles{
+
+                .profiles {
                         padding: 1%;
                         display: flex;
                         flex-direction: row;
                         text-decoration: none;
                 }
-                .profiles ul{
+
+                .profiles div {
                         text-decoration: none;
                         display: flex;
                         flex-direction: row;
                         justify-content: space-between;
                 }
-                .profiles li{
+
+                i {
                         margin: 0 2%;
                         color: #c8d8e4;
-                        margin-left: 7px ;
+                        margin-right: 25px;
+
                 }
-        </style>
+
+                
+                </style>
         <!-- Style CSS File -->
         <script src="../navbar/nav.js" defer></script>
         <link rel="stylesheet" href="../navbar/nav.css" />
+        <link rel="stylesheet" href="CSS/info.css" />
+        <link rel="stylesheet" href="CSS/consoleText.css" />
+        <script src="CSS/consoletext.js" defer></script>
         <link rel="stylesheet" href="CSS/style.css" />
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+                integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+                crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -95,18 +109,43 @@
         </nav>
 
         <div class="container">
-                <h2 class="bigtext hi">Hi There! 👋🏻</h2>
+                <h2 class="bigtext hi">Hi There! 👋🏻<i class="fa-solid fa-hand-wave fa-shake"></i> </h2>
                 <h1 class="biggertext">I'm <span>Aditya Narayan.</span></h1>
                 <!-- <hr> -->
-                <!-- <br> -->
-                <h2 class="bigtext">Full Stack Developer | MERN</h2>
-                <ul class="profiles">
-                        <li>LinkedIn </li>
-                        <li>GFG </li>
-                        <li>Codechef </li>
-                        <li>HackerRank </li>
-                </ul>
+                <h2 class="bigtext"><div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div></h2>
+                <!-- <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div> -->
+                <div class="profiles">
+                        <div><a href="https://www.linkedin.com/in/adityanarayan29/"><i
+                                                class="fa-brands fa-linkedin icon" style="font-size:28px;"
+                                                aria-hidden="true"></i></a></div>
+
+                        <div><a href="https://www.instagram.com/__adityanarayan__/"><i class="fa-brands fa-instagram"
+                                                style="font-size:28px;" aria-hidden="true"></i></a></div>
+
+                        <!-- <div><i class="fa-brands fa-google icon" style="font-size:28px;" aria-hidden="true"></i></div> -->
+                        <div><a href="https://github.com/AdityaNarayan2000/"><i class="fa-brands fa-github"
+                                                style="font-size:28px;"></i></a></div>
+
+                        <div class="card" tabindex="0">
+                                <span class="card__infoicon"><i class="fa-solid fa-code"></i>
+                                </span>
+                                <!-- <h1 class="card__title">Coding Platforms</h1> -->
+
+                                <p class="card__credits">
+                                        <a class="card__reference"
+                                                href="https://www.hackerrank.com/29adityanarayan1">HackerRank </a>
+                                        |
+                                        <a class="card__reference"
+                                                href="https://www.codechef.com/users/aditya_narayn">CodeChef </a>
+                                        |
+                                        <a class="card__reference"
+                                                href="https://www.codechef.com/users/aditya_narayn">DSA GitHub Repo </a>
+                                </p>
+                        </div>
+                </div>
         </div>
+        
+
 </body>
 
 </html>

@@ -17,6 +17,12 @@ body{
     margin: 0%;
     background-color: #000000;
     /* color: aliceblue; */
+
+    
+  background-image: linear-gradient(#2b6777d2,#2b677721),url('../CSS/portfolioBg.jpg'); 
+  background-repeat: no-repeat;
+  background-position: 0%;
+  background-size: cover;
 }
 .container{
     display: flex;
