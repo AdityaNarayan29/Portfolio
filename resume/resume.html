@@ -8,33 +8,38 @@
   <title>Document</title>
   <!-- <link rel="stylesheet" href="resume.css"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="../navbar/nav.css" />
   <script src="../navbar/nav.js" defer></script>
   <script src="res.js" defer></script>
+  <script src="dbtn.js" defer></script>
   <link rel="stylesheet" href="res.css">
+  <link rel="stylesheet" href="dbtn.css">
+
 </head>
 
 <body>
   <nav>
-  <div class="logo">
-    <h4>AN.</h4>
-</div>
-<ul class="menu">
-    <li><a href="../index.html">Home</a></li>
-    <li><a href="../about/about.html">About</a></li>
-    <li><a href="../skillnew/skill.html">Skills</a></li>
-    <li><a href="#">Work</a></li>
-    <li><a href="../projectsPage/projectPage.html">Projects</a></li>
-    <li><a href="../resume/resume.html">Resume</a></li>
-    <li><a href="../contact/contact.html">Contact Me</a></li>
-</ul>
-<div id="toggleBtn">
-    <div class="line1"></div>
-    <div class="line2"></div>
-    <div class="line3"></div>
-</div>
-</nav>
+    <div class="logo">
+      <h4>AN.</h4>
+    </div>
+    <ul class="menu">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about/about.html">About</a></li>
+      <li><a href="../skillnew/skill.html">Skills</a></li>
+      <!-- <li><a href="#">Work</a></li> -->
+      <li><a href="../projectsPage/projectPage.html">Projects</a></li>
+      <li><a href="../resume/resume.html">Resume</a></li>
+      <li><a href="../contact/contact.html">Contact Me</a></li>
+    </ul>
+    <div id="toggleBtn">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
   <div class="resume-wrapper">
     <section class="profile section-padding">
       <div class="container">
@@ -87,7 +92,8 @@
           <div class="list-content ">
             <div class="list">+91 7737761854</div> <!-- YOUR PHONE NUMBER  -->
             <div class="list">29adityanarayan2000@gmail.com</div> <!-- YOUR EMAIL -->
-            <div class="list"><a href="https://aditya29.netlify.app/index.html">aditya29.netlify.app</a></div> <!-- YOUR WEBSITE  -->
+            <div class="list"><a href="https://aditya29.netlify.app/index.html">aditya29.netlify.app</a></div>
+            <!-- YOUR WEBSITE  -->
             <div class="list">Bhubaneshwar, India</div> <!-- YOUR STATE AND COUNTRY  -->
           </div>
         </div>
@@ -99,194 +105,129 @@
           <div class="list-titles">
             <div class="list">LinkedIn</div>
             <div class="list">GitHub</div>
-            <div class="list">Codepen</div>
+            <!-- <div class="list">Codepen</div> -->
           </div>
           <div class="list-content">
-            <!-- REMEMBER TO PUT THE URL ON THE HREF TAG  -->
             <div class="list"><a href="https://www.linkedin.com/in/adityanarayan29/">AdityaNarayan29</a></div>
-            <!-- YOUR TWITTER USER  -->
-            <div class="list"><a href="https://github.com/AdityaNarayan2000/">AdityaNarayan2000</a></div> <!-- YOUR DRIBBBLE USER  -->
-            <div class="list"><a href="">janderson</a></div> <!-- YOUR BEHANCE USER  -->
+            <div class="list"><a href="https://github.com/AdityaNarayan2000/">AdityaNarayan2000</a></div>
           </div>
         </div>
-      </div>
-      <div class="section-wrapper clearfix">
-        <h3 class="section-title">Skills</h3> <!-- YOUR SET OF SKILLS  -->
-        <div class="skill-percentage">HTML / HTML5</div>
-        <div class="skill-percentage">CSS / CSS3</div>
-        <div class="skill-percentage">Javascript</div>
-        <div class="skill-percentage">Jquery</div>
-        <div class="skill-percentage">Wordpress</div>
-        <div class="skill-percentage">Photoshop</div>
-      </div>
+        <div class="section-wrapper clearfix">
+          <h3 class="section-title">Skills</h3>
+          <div class="skill-percentage">HTML / HTML5</div>
+          <div class="skill-percentage">CSS / CSS3</div>
+          <div class="skill-percentage">Javascript</div>
+          <div class="skill-percentage">Jquery</div>
+          <div class="skill-percentage">Wordpress</div>
+          <div class="skill-percentage">Photoshop</div>
+        </div>
 
-      <div class="section-wrapper clearfix">
-        <h3 class="section-title">Hobbies</h3> <!-- DESCRIPTION OF YOUR HOBBIES -->
-        <p></p>
-      </div>
-      <div class="inner-container">
-        <div>
-            <h1>Resume</h1>
+        <div class="section-wrapper clearfix">
+          <h3 class="section-title">Hobbies</h3> <!-- DESCRIPTION OF YOUR HOBBIES -->
+          <p>
+            <span>Reading</span>
+            <span>Research</span>
+            <span>Travelling</span>
+            <span>Sci-Fi</span>
+          </p>
         </div>
-        <div>
-            <button class="btn btnn hover-border">
-                <!-- <a href="AdityaNarayan_CV.pdf" download><span>Download</span></a> -->
-                <a href="https://drive.google.com/file/d/13E6wz3WkS4U2izoCmv0EzJWRJZZ422O-/view?usp=sharing" download><span>Download</span></a>
-            </button>
+        <div class="inner-container">
+          <div class="btnContainer">
+            <div>
+              <h2>Resume</h2>
+            </div>
+            <a href="https://drive.google.com/file/d/13E6wz3WkS4U2izoCmv0EzJWRJZZ422O-/view?usp=sharing" download
+              class="button"><i class="fa"></i></a>
+          </div>
         </div>
-    </div>
     </section>
-    
+
     <section class="experience section-padding">
-      <div class="container">
-        <h3 class="experience-title">Experience</h3>
 
-        <div class="experience-wrapper">
-          <div class="company-wrapper clearfix">
-            <div class="experience-title">Company name</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
-            <div class="time">Nov 2012 - Present</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
-          </div>
 
-          <div class="job-wrapper clearfix">
-            <div class="experience-title">Front End Developer </div> <!-- JOB TITLE  -->
-            <div class="company-description">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a elit facilisis, adipiscing leo in,
-                dignissim magna.</p> <!-- JOB DESCRIPTION  -->
-            </div>
-          </div>
 
-          <div class="company-wrapper clearfix">
-            <div class="experience-title">Company name</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
-            <div class="time">Nov 2010 - Present</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
-          </div>
 
-          <div class="job-wrapper clearfix">
-            <div class="experience-title">Freelance, Web Designer / Web Developer</div> <!-- JOB TITLE  -->
-            <div class="company-description">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a elit facilisis, adipiscing leo in,
-                dignissim magna.</p> <!-- JOB DESCRIPTION  -->
-            </div>
-          </div>
-
-          <div class="company-wrapper clearfix">
-            <div class="experience-title">Company name</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
-            <div class="time">Nov 2009 - Nov 2010</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
-          </div>
-
-          <div class="job-wrapper clearfix">
-            <div class="experience-title">Web Designer </div> <!-- JOB TITLE  -->
-            <div class="company-description">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a elit facilisis, adipiscing leo in,
-                dignissim magna.</p> <!-- JOB DESCRIPTION  -->
-            </div>
-          </div>
-
+      <h3 class="experience-title">Experience</h3>
+      <div class="wrapper">
+        <div class="company-wrapper clearfix">
+          <div class="experience-title">Datoms.io</div>
+          <div class="time">Mar 2021 - Aug 2021</div>
         </div>
-        <!--Skill experience-->
-
-        
-
-        
+        <div class="job-wrapper clearfix">
+          <div class="experience-title">Software Development Intern </div>
+          <div class="company-description">
+            <p>Built a web app using MERN , to integrate with Street Light Bulbs.</p>
+            <p>Designed UI for the Web App and Android App.</p>
+            <p>Tech : ReactJS , AntDesign & NodeJS. </p>
+          </div>
+        </div>
       </div>
-      <div class="container">
-        <h3 class="experience-title">Experience</h3>
-
-        <div class="experience-wrapper">
-          <div class="company-wrapper clearfix">
-            <div class="experience-title">Company name</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
-            <div class="time">Nov 2012 - Present</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
-          </div>
-
-          <div class="job-wrapper clearfix">
-            <div class="experience-title">Front End Developer </div> <!-- JOB TITLE  -->
-            <div class="company-description">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a elit facilisis, adipiscing leo in,
-                dignissim magna.</p> <!-- JOB DESCRIPTION  -->
-            </div>
-          </div>
-
-          <div class="company-wrapper clearfix">
-            <div class="experience-title">Company name</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
-            <div class="time">Nov 2010 - Present</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
-          </div>
-
-          <div class="job-wrapper clearfix">
-            <div class="experience-title">Freelance, Web Designer / Web Developer</div> <!-- JOB TITLE  -->
-            <div class="company-description">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a elit facilisis, adipiscing leo in,
-                dignissim magna.</p> <!-- JOB DESCRIPTION  -->
-            </div>
-          </div>
-
-          <div class="company-wrapper clearfix">
-            <div class="experience-title">Company name</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
-            <div class="time">Nov 2009 - Nov 2010</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
-          </div>
-
-          <div class="job-wrapper clearfix">
-            <div class="experience-title">Web Designer </div> <!-- JOB TITLE  -->
-            <div class="company-description">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a elit facilisis, adipiscing leo in,
-                dignissim magna.</p> <!-- JOB DESCRIPTION  -->
-            </div>
-          </div>
-
+      <div class="wrapper">
+        <div class="company-wrapper clearfix">
+          <div class="experience-title">The Next</div>
+          <div class="time">Sep 2020 - Nov 2020</div>
         </div>
-        <!--Skill experience-->
-
-        
-
-        
+        <div class="job-wrapper clearfix">
+          <div class="experience-title">Freelance, Web Designer / Web Developer</div>
+          <div class="company-description">
+            <p>Built pages like Sign In/Sign Up Page & Home Page.</p>
+            <p>Designing UI for the Web App.</p>
+            <p>Tech : ReactJs, NodeJs, Bootstrap.</p>
+          </div>
+        </div>
       </div>
-      <div class="container">
-        <h3 class="experience-title">Experience</h3>
-
-        <div class="experience-wrapper">
-          <div class="company-wrapper clearfix">
-            <div class="experience-title">Company name</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
-            <div class="time">Nov 2012 - Present</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
-          </div>
-
-          <div class="job-wrapper clearfix">
-            <div class="experience-title">Front End Developer </div> <!-- JOB TITLE  -->
-            <div class="company-description">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a elit facilisis, adipiscing leo in,
-                dignissim magna.</p> <!-- JOB DESCRIPTION  -->
-            </div>
-          </div>
-
-          <div class="company-wrapper clearfix">
-            <div class="experience-title">Company name</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
-            <div class="time">Nov 2010 - Present</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
-          </div>
-
-          <div class="job-wrapper clearfix">
-            <div class="experience-title">Freelance, Web Designer / Web Developer</div> <!-- JOB TITLE  -->
-            <div class="company-description">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a elit facilisis, adipiscing leo in,
-                dignissim magna.</p> <!-- JOB DESCRIPTION  -->
-            </div>
-          </div>
-
-          <div class="company-wrapper clearfix">
-            <div class="experience-title">Company name</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
-            <div class="time">Nov 2009 - Nov 2010</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
-          </div>
-
-          <div class="job-wrapper clearfix">
-            <div class="experience-title">Web Designer </div> <!-- JOB TITLE  -->
-            <div class="company-description">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a elit facilisis, adipiscing leo in,
-                dignissim magna.</p> <!-- JOB DESCRIPTION  -->
-            </div>
-          </div>
-
+      <div class="wrapper">
+        <div class="company-wrapper clearfix">
+          <div class="experience-title">Sanscript Technologies</div>
+          <div class="time">Jun 2020 - Aug 2020</div>
         </div>
-        <!--Skill experience-->
+        <div class="job-wrapper clearfix">
+          <div class="experience-title">Web Designer & Web Development Intern</div>
+          <div class="company-description">
+            <p>Created dashboards and functionalities for admin.</p>
+            <p>Resolved bugs & made past code legible.</p>
+            <p>Upskilled subordinates about the JS codebase.</p>
+          </div>
+        </div>
+      </div>
 
-        
 
-        
+      <h3 class="experience-title">Education</h3>
+      <div class="wrapper">
+        <div class="company-wrapper clearfix">
+          <div class="experience-title">B.Tech , CSE</div>
+          <div class="time">2023 Passout</div>
+        </div>
+        <div class="job-wrapper clearfix">
+          <div class="experience-title">Silicon Institute of Technology , Bhubhneshwar </div>
+          <div class="company-description">
+            <p>GPA - 8.4</p>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="company-wrapper clearfix">
+          <div class="experience-title">Senior Secondary (XII)</div>
+          <div class="time">06/2016 - 03/2018</div>
+        </div>
+        <div class="job-wrapper clearfix">
+          <div class="experience-title">St. John Senior Secondary School , Buxar</div>
+          <div class="company-description">
+            <p>Percentage - 67.6%</p>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="company-wrapper clearfix">
+          <div class="experience-title">Secondary School (X)</div>
+          <div class="time">06/2004 - 03/2018, </div>
+        </div>
+        <div class="job-wrapper clearfix">
+          <div class="experience-title">Guru Gobind Singh Public School , Bokaro </div>
+          <div class="company-description">
+            <p>PA - 10.0</p>
+          </div>
+        </div>
       </div>
     </section>
 

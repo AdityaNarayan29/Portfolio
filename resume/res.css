@@ -27,6 +27,9 @@
       background-size: cover;
 
     }
+    span{
+      padding: 0px 10px;
+    }
     a {
       color: #378297;
       text-decoration: underline;
@@ -62,6 +65,10 @@
     .container {
       min-height: 100px;
     }
+    .wrapper{
+      display: flex;
+      flex-direction: row;
+    }
 
     .profile {
       background: #fff;
@@ -88,7 +95,7 @@
       color: #4a4e51;
       text-transform: uppercase;
       line-height: 1em;
-      /* padding-top: 40px; */
+      padding-top: 40px;
     }
 
     @media (max-width: 1200px) {
@@ -200,7 +207,7 @@
       float: left;
       text-align: left;
       font-weight: 550;
-      width: 30%;
+      width:40%;
       color: #4a4e51;
     }
 
@@ -272,7 +279,7 @@
     }
 
     .experience .company-wrapper {
-      width: 30%;
+      width: 27%;
       float: left;
       text-align: left;
       padding-right: 5%;
@@ -287,7 +294,7 @@
     }
 
     .experience .job-wrapper {
-      width: 70%;
+      width: 60%;
       float: left;
       text-align: left;
       padding-right: 5%;
@@ -328,7 +335,7 @@
       text-align: left;
       color: #636363;
       font-weight: 400;
-      margin-bottom: 20px;
+      margin-bottom: 100px;
     }
 
     @media (max-width: 450px) {
@@ -410,7 +417,7 @@
     }
 
     .section-wrapper .skill-percentage:nth-child(7)::before {
-      width: 70%;
+      width: 90%;
       -webkit-animation: skill_6 0.6s ease;
       animation: skill_6 0.6s ease;
     }
@@ -541,7 +548,7 @@
       }
 
       to {
-        width: 70%;
+        width: 90%;
       }
     }
 
@@ -551,6 +558,6 @@
       }
 
       to {
-        width: 70%;
+        width: 90%;
       }
     }
