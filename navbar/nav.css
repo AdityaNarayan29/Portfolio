@@ -14,10 +14,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 10vh;
-  /* background-color: #7100b3; */
   background-color: #ffffff;
-  /* background-color: #210233; */
-  /* background-image: linear-gradient(#210233 , #350053 ); */
   z-index: 10;
 }
 
