@@ -11,7 +11,7 @@ const height = document.querySelector('.chart-wrapper').offsetHeight;
 const minOfWH = Math.min(width, height) / 2;
 const initialAnimDelay = 300;
 const arcAnimDelay = 150;
-const arcAnimDur = 2000;
+const arcAnimDur = 1400;
 const secDur = 700;
 const secIndividualdelay = 150;
 
