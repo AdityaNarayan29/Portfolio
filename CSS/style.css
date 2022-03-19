@@ -1,8 +1,21 @@
-body{
-  background-image: linear-gradient(#2b6777d2,#2b677721),url('portfolioBg.jpg'); 
-  background-image: linear-gradient(#00405296,#03151a31,#2b677721),url('portfolioBg.jpg'); 
+body {
+  background-image: linear-gradient(#2b6777d2, #2b677721),
+    url("portfolioBg.jpg");
+  background-image: linear-gradient(#00405296, #03151a31, #2b677721),
+    url("portfolioBg.jpg");
   background-repeat: no-repeat;
   background-position: 0%;
   background-size: cover;
+}
 
+.QR {
+  margin: 150px;
+  position: relative;
+  float: right;
+}
+
+@media only screen and (max-width: 1000px) {
+  .QR {
+    display: none;
+  }
 }
