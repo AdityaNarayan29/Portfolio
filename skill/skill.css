@@ -1,6 +1,7 @@
 body {
   overflow: hidden;
-  background-image: linear-gradient(#00405296,#03151a31,#2b677721),url('/CSS/portfolioBg.jpg'); 
+  background-image: linear-gradient(#00405296, #03151a31, #2b677721),
+    url("/CSS/portfolioBg.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   background-size: 400%;
@@ -8,7 +9,6 @@ body {
   font-weight: 800;
   /* background-color: #ff8e6c; */
 }
-
 
 ::-webkit-scrollbar {
   width: 1px;
@@ -24,7 +24,7 @@ path {
   stroke: #0d0d0d63;
   /* stroke-width: 5px; */
   cursor: pointer;
-  transition: fill 250ms;
+  transition: fill 50ms;
 }
 path:hover {
   /* stroke-width: 10px; */
@@ -46,8 +46,8 @@ polyline {
 
 button {
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 80px;
+  right: 20px;
   text-transform: uppercase;
   cursor: pointer;
   padding: 5px 10px;

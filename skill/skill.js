@@ -8,50 +8,52 @@ const skills = ['Java / JavaScript / C++', 'MongoDB / MySQL', 'NodeJS / ExpressJ
 
 const width = document.querySelector('.chart-wrapper').offsetWidth;
 const height = document.querySelector('.chart-wrapper').offsetHeight;
-const minOfWH = Math.min(width, height) / 2;
-const initialAnimDelay = 300;
-const arcAnimDelay = 150;
-const arcAnimDur = 1400;
-const secDur = 700;
-const secIndividualdelay = 150;
+const minOfWH = Math.min(width, height) / 2.2;
+const initialAnimDelay = 100;
+const arcAnimDelay = 100;
+const arcAnimDur = 1000;
+const secDur = 200;
+const secIndividualdelay = 100;
 
 let radius;
 
 // calculate minimum of width and height to set chart radius
-if (minOfWH > 200) {
-  radius = 200;
+if (minOfWH > 150) {
+  radius = 150;
 } else {
   radius = minOfWH;
 }
 
 // append svg
 let svg = d3.select('.chart-wrapper').append('svg').
-attr({
-  'width': width,
-  'height': height,
-  'class': 'pieChart' }).
+  attr({
+    'width': width,
+    'height': height,
+    'class': 'pieChart'
+  }).
 
-append('g');
+  append('g');
 
 svg.attr({
-  'transform': `translate(${width / 2}, ${height / 2})` });
+  'transform': `translate(${width / 2}, ${height / 2})`
+});
 
 
 // for drawing slices
 let arc = d3.svg.arc().
-outerRadius(radius * 0.6).
-innerRadius(radius * 0.45);
+  outerRadius(radius * 0.6).
+  innerRadius(radius * 0.45);
 
 // for labels and polylines
 let outerArc = d3.svg.arc().
-innerRadius(radius * 0.85).
-outerRadius(radius * 0.85);
+  innerRadius(radius * 0.85).
+  outerRadius(radius * 0.85);
 
 // d3 color generator
 // let c10 = d3.scale.category10();
 
 let pie = d3.layout.pie().
-value(d => d);
+  value(d => d);
 
 let draw = function () {
 
@@ -61,74 +63,75 @@ let draw = function () {
 
   // define slice
   let slice = svg.select('.slices').
-  datum(dataset).
-  selectAll('path').
-  data(pie);
+    datum(dataset).
+    selectAll('path').
+    data(pie);
   slice.
-  enter().append('path').
-  attr({
-    'fill': (d, i) => colors[i],
-    'd': arc,
-    'stroke-width': '25px',
-    'transform': (d, i) => 'rotate(-180, 0, 0)' }).
+    enter().append('path').
+    attr({
+      'fill': (d, i) => colors[i],
+      'd': arc,
+      'stroke-width': '25px',
+      'transform': (d, i) => 'rotate(-180, 0, 0)'
+    }).
 
-  style('opacity', 0).
-  transition().
-  delay((d, i) => i * arcAnimDelay + initialAnimDelay).
-  duration(arcAnimDur).
-  ease('elastic').
-  style('opacity', 1).
-  attr('transform', 'rotate(0,0,0)');
+    style('opacity', 0).
+    transition().
+    delay((d, i) => i * arcAnimDelay + initialAnimDelay).
+    duration(arcAnimDur).
+    ease('elastic').
+    style('opacity', 1).
+    attr('transform', 'rotate(0,0,0)');
 
   slice.transition().
-  delay((d, i) => arcAnimDur + i * secIndividualdelay).
-  duration(secDur).
-  attr('stroke-width', '5px');
+    delay((d, i) => arcAnimDur + i * secIndividualdelay).
+    duration(secDur).
+    attr('stroke-width', '5px');
 
   let midAngle = d => d.startAngle + (d.endAngle - d.startAngle) / 2;
 
   let text = svg.select(".labels").selectAll("text").
-  data(pie(dataset));
+    data(pie(dataset));
 
   text.enter().
-  append('text').
-  attr('dy', '0.35em').
-  style("opacity", 0).
-  style('fill', (d, i) => colors[i]).
-  // text((d, i) => colors[i]).
-  text((d, i) => skills[i]).
-  attr('transform', d => {
-    // calculate outerArc centroid for 'this' slice
-    let pos = outerArc.centroid(d);
-    // define left and right alignment of text labels 							
-    pos[0] = radius * (midAngle(d) < Math.PI ? 1 : -1);
-    return `translate(${pos})`;
-  }).
-  style('text-anchor', d => midAngle(d) < Math.PI ? "start" : "end").
-  transition().
-  delay((d, i) => arcAnimDur + i * secIndividualdelay).
-  duration(secDur).
-  style('opacity', 1);
+    append('text').
+    attr('dy', '0.35em').
+    style("opacity", 0).
+    style('fill', (d, i) => colors[i]).
+    // text((d, i) => colors[i]).
+    text((d, i) => skills[i]).
+    attr('transform', d => {
+      // calculate outerArc centroid for 'this' slice
+      let pos = outerArc.centroid(d);
+      // define left and right alignment of text labels 							
+      pos[0] = radius * (midAngle(d) < Math.PI ? 1 : -1);
+      return `translate(${pos})`;
+    }).
+    style('text-anchor', d => midAngle(d) < Math.PI ? "start" : "end").
+    transition().
+    delay((d, i) => arcAnimDur + i * secIndividualdelay).
+    duration(secDur).
+    style('opacity', 1);
 
   let polyline = svg.select(".lines").selectAll("polyline").
-  data(pie(dataset));
+    data(pie(dataset));
 
   polyline.enter().
-  append("polyline").
-  style("opacity", 0.5).
-  attr('points', d => {
-    let pos = outerArc.centroid(d);
-    pos[0] = radius * 0.95 * (midAngle(d) < Math.PI ? 1 : -1);
-    return [arc.centroid(d), arc.centroid(d), arc.centroid(d)];
-  }).
-  transition().
-  duration(secDur).
-  delay((d, i) => arcAnimDur + i * secIndividualdelay).
-  attr('points', d => {
-    let pos = outerArc.centroid(d);
-    pos[0] = radius * 0.95 * (midAngle(d) < Math.PI ? 1 : -1);
-    return [arc.centroid(d), outerArc.centroid(d), pos];
-  });
+    append("polyline").
+    style("opacity", 0.5).
+    attr('points', d => {
+      let pos = outerArc.centroid(d);
+      pos[0] = radius * 0.95 * (midAngle(d) < Math.PI ? 1 : -1);
+      return [arc.centroid(d), arc.centroid(d), arc.centroid(d)];
+    }).
+    transition().
+    duration(secDur).
+    delay((d, i) => arcAnimDur + i * secIndividualdelay).
+    attr('points', d => {
+      let pos = outerArc.centroid(d);
+      pos[0] = radius * 0.95 * (midAngle(d) < Math.PI ? 1 : -1);
+      return [arc.centroid(d), outerArc.centroid(d), pos];
+    });
 };
 
 draw();
