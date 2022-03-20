@@ -7,15 +7,3 @@ body {
   background-position: 0%;
   background-size: cover;
 }
-
-.QR {
-  margin: 150px;
-  position: relative;
-  float: right;
-}
-
-@media only screen and (max-width: 1000px) {
-  .QR {
-    display: none;
-  }
-}
