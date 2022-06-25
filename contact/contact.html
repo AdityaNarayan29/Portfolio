@@ -36,18 +36,26 @@
   </nav>
   <div class="container">
     <div class="contact">
-      <form onsubmit="sendEmail();reset();return false;">
+      <form onsubmit="sendEmail();reset();
+      // return false;
+      ">
+        <!-- <form action="http://formsubmit.co/sinha.addi@gmail.com" method="POST"> -->
+        <!-- <form action="http://formsubmit.co/el/jotige" method="POST"> -->
         <h1>
           Get in Contact
         </h1><br>
 
         <div>
-          <input type="text" id="name" name="name" placeholder="Your Name">
-          <input type="email" id="email" name="email" placeholder="Your E-mail"><br>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+          <input type="email" id="email" name="email" placeholder="Your E-mail" required><br>
         </div>
         <div>
 
-          <textarea name="message" id="message" cols="48" rows="2" placeholder="Your Message..."></textarea><br>
+          <textarea type="text" name="message" id="message" cols="48" rows="2" placeholder="Your Message..."
+            required></textarea><br>
+          <!-- <input type="text" name="message" id="message" placeholder="Your Message..." required><br> -->
+          <!-- <input type="hidden" name="_next" value="https://aditya29.netlify.app"> -->
+          <!-- <input type="hidden" name="_next" value="https://yourdomain.co/message_sent.html"> -->
         </div>
         <div>
           <button type="submit" class="btn btnn hover-border">
@@ -57,8 +65,8 @@
       </form>
     </div>
   </div>
+  <script src="contact.js" defer></script>
   <script src=" https://smtpjs.com/v3/smtp.js"></script>
-  <script src="contact.js"></script>
 </body>
 
 </html>
