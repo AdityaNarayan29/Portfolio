@@ -16,6 +16,7 @@ nav {
   height: 10vh;
   background-color: #ffffff;
   z-index: 10;
+  /* border-bottom: 2px solid black; */
 }
 
 nav .logo {

@@ -39,6 +39,15 @@ body{
     padding: 40px 50px;
 }
 
+.inner-containers{
+    max-height: 90%;
+    /* border: 4px solid #00ffd5 ; */
+    width: 35%;
+    float: left;
+    background-color: #ffffff;
+    padding: 8%;
+    
+}
 .inner-container{
     max-height: 90%;
     /* border: 4px solid #00ffd5 ; */
